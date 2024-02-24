@@ -10,11 +10,4 @@ $data=[
 layouts('header',$data);
 ?>
 
-<<<<<<< Updated upstream
-<h2>login page datcute</h2>
-=======
-<h2>login page congcute</h2>
-
-<?php
-layouts('footer');
->>>>>>> Stashed changes
+<h2>login page </h2>
