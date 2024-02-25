@@ -37,7 +37,7 @@ function insert($table, $data){
     $key = array_keys($data);
     $truong = implode(',', $key);
     $valuetb = ':'.implode(',:', $key);
-
+    
     $sql = 'INSERT INTO '.$table. ' ('.$truong.')'. 'VALUES('.$valuetb.')';
 
     $kq = query($sql, $data);
