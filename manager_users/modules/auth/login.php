@@ -7,6 +7,7 @@ $data=[
     'pageTitle' => 'Login'
 ];
 
+var_dump(isEmail('conggmail.com'));
 layouts('header',$data);
 ?>
 
