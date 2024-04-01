@@ -4,6 +4,11 @@ if(!defined('_CODE')){
     die('Access dinied...');
 }
 
+function redirect($url) {
+    header('Location: ' . $url);
+    exit;
+}
+
 //layout
 function layouts($layoutName='header', $data=[]){
     if(file_exists(_WEB_PATH_TEMPLATES.'/layout/'.$layoutName.'.php')){

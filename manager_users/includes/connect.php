@@ -16,7 +16,7 @@ try{
         $conn = new PDO($dsn, _USER, _PASS, $options);
         $test = 'thanh cong';
     }
-}catch(Excetion $exp){
+}catch(Exception $exp){
     echo $exp ->getMessage().'<br>';
     die();
 }

@@ -18,7 +18,7 @@ function query($sql, $data=[], $check = false){
             $ketqua = $statement ->execute();
         }
     }
-    catch(Excetion $exp){
+    catch(Exception $exp){
         echo $exp ->getMessage().'<br>';
         echo 'File: '. $exp -> getFile().'<br>';
         echo 'Line: '.$exp -> getLine();
@@ -68,7 +68,7 @@ function delete($table, $condition=''){
         $sql = 'DELETE FROM '.$table;
     }
     else{
-        $sql = 'DELETE FROM '.$table. ' WHERE '.$conditon;
+        $sql = 'DELETE FROM '.$table. ' WHERE '.$condition;
     }
 
     $kq = query($sql);

@@ -4,10 +4,9 @@ if (!defined('_CODE')) {
 }
 
 $data = [
-    'pageTitle' => 'Admin index'
+    'pageTitle' => 'Danh sách người dùng'
 ];
 
 layouts('header', $data);
 
 ?>
-<h2>index of auth</h2>

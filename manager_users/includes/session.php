@@ -27,7 +27,7 @@ function removeSession($key=''){
         return true;
     }else{
         if(isset($_SESSION[$key])){
-            unset($_SESSION[$key])
+            unset($_SESSION[$key]);
             return true;
         }
     }
