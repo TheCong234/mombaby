@@ -21,12 +21,17 @@ if (!defined('_CODE')) {
 // ];
 
 // update('user',$data, 'id=2');
+
 if(isPost()){
-    if(insert('user', $_POST)){
-        $smg = "Đăng ký thành công";
-    }else{
-        $smg = "Lỗi, vui lòng thử lại sau";
+    $codeConfirm = rand(100000, 999999);
+    $send = SendMail($_POST['email'], 'Xac thuc dang ky tai khoan tai Mombaby shop', 'Mã nè: '.$codeConfirm);
+    if($send){
+        setSession('newUser', $_POST);
+        setSession('codeConfirm', $codeConfirm);
+        setSession('typeConfirm', 'register');
+        redirect('?module=auth&action=confirm');
     }
+    
 }
 
 $data=[

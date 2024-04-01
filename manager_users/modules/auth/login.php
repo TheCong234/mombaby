@@ -55,7 +55,8 @@ layouts('header', $data);
       if(!empty($smg))
         echo $smg.'<br>';
       ?>
-      <button type="submit" class="btn btn-success">Submit</button>
+      <button type="submit" class="btn btn-success mb-3">Submit</button> <br>
+      <a href="?module=auth&action=forgot">Quên mật khẩu</a>
     </div>
   </form>
 </div>

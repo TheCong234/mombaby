@@ -19,7 +19,6 @@ if(isPost()){
         'image' => $_POST['image']
     ];
     insert('stories', $insertData);
-    redirect('?module=owner&action=home');
 }
 
 layouts('header', $data);

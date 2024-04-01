@@ -3,6 +3,11 @@
 session_start();
 require_once('config.php');
 require_once('./includes/connect.php');
+
+require_once('./includes/PHPMailer/Exception.php');
+require_once('./includes/PHPMailer/PHPMailer.php');
+require_once('./includes/PHPMailer/SMTP.php');
+
 require_once('./includes/functions.php');
 require_once('./includes/database.php');
 require_once('./includes/session.php');
