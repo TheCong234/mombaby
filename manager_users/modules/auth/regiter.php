@@ -21,7 +21,6 @@ if (!defined('_CODE')) {
 // ];
 
 // update('user',$data, 'id=2');
-echo 'hahahah';
 if(isPost()){
     if(insert('user', $_POST)){
         $smg = "Đăng ký thành công";
@@ -47,6 +46,10 @@ layouts('header', $data);
         <div class="mb-3">
             <label for="" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" placeholder="nguyenvana@gmail.com" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Ngày sinh</label>
+            <input type="text" class="form-control" id="name" placeholder="2004-02-15" name="birth">
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Số điện thoại</label>

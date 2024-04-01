@@ -22,7 +22,7 @@ if(isPost()){
       redirect('?module=admin&action=index');
     }else{
       setSession('logged', $userQuery['name']);
-      redirect('?module=home&action=dashboard');
+      redirect('?module=product&action=products');
     }
     
   }else{
