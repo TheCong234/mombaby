@@ -54,7 +54,7 @@ $bills = getRaw("SELECT * FROM bills WHERE userId = ".$userId);
                 <?php echo '<div class="col-md fs-4">'.$userInfor['email'].'</div>'; ?>
             </div>
             <div class="position-absolute " style="bottom:10px;">
-                <a class="btn btn-warning" href="">Chỉnh sửa</a>
+                <a class="btn btn-warning opacity-25" href="">Chỉnh sửa (updating ...)</a>
             </div>
         </div>
     </div>

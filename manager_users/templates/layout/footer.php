@@ -17,7 +17,7 @@ if(!defined('_CODE')){
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">About us</a>
+              <a href="https://www.facebook.com/the.cong.790/" class="text-white">Về chúng tôi</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -25,7 +25,7 @@ if(!defined('_CODE')){
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Products</a>
+              <a href="?module=product&action=products" class="text-white">Sản phẩm</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -33,7 +33,7 @@ if(!defined('_CODE')){
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Awards</a>
+              <a href="?module=auth&action=login" class="text-white">Bán hàng</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -41,7 +41,7 @@ if(!defined('_CODE')){
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Help</a>
+              <a href="#!" class="text-white">Trợ giúp</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -49,7 +49,7 @@ if(!defined('_CODE')){
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Contact</a>
+              <a href="#!" class="text-white">Liên hệ</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -65,10 +65,7 @@ if(!defined('_CODE')){
         <div class="row d-flex justify-content-center">
           <div class="col-lg-8">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              distinctio earum repellat quaerat voluptatibus placeat nam,
-              commodi optio pariatur est quia magnam eum harum corrupti
-              dicta, aliquam sequi voluptate quas.
+              Hệ thống Mombaby luôn muốn đem đến cho người dùng những dịch vụ, sản phẩm tốt nhất, cung cấp cho các cửa hàng bán lẻ một thị trường buôn bán có lợi nhất
             </p>
           </div>
         </div>
@@ -77,7 +74,7 @@ if(!defined('_CODE')){
 
       <!-- Section: Social -->
       <section class="text-center mb-5">
-        <a href="" class="text-white me-4">
+        <a href="https://www.facebook.com/the.cong.790/" class="text-white me-4">
           <i class="fab fa-facebook-f"></i>
         </a>
         <a href="" class="text-white me-4">
@@ -106,8 +103,8 @@ if(!defined('_CODE')){
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
       © 2024:
-      <a class="text-white" href="https://mdbootstrap.com/"
-         >mombaby store</a
+      <a class="text-white" href="https://dhv.edu.vn/"
+         >mombaby store 736 Nguyễn Trãi, P.11, Q.5 Tp:Hồ Chí Minh</a
         >
     </div>
     <!-- Copyright -->
@@ -116,6 +113,26 @@ if(!defined('_CODE')){
 </div>
 <!-- End of .container -->
 
+<script>
+  (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
 
 <script src="<?php echo _WEB_HOST_TEMPLATES?>/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

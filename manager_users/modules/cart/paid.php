@@ -37,6 +37,13 @@ if(isPost()){
             'quantity' => $cart['quantity']
         ];
         insert('billitems', $billItemsData);
+
+        //cập nhật số lượng tồn
+        $product = oneRaw("SELECT * FROM products WHERE id = ".$cart['productId']);
+        $inventoryData = [
+            'inventory' => $product['inventory'] - $cart['quantity']
+        ];
+        update('products', $inventoryData, 'id = '.$product['id']);
     }
 
     delete('carts', 'userId = '.$userId);

@@ -44,8 +44,8 @@ $products = getRaw("SELECT * FROM products WHERE storeId = ".$storeId);
                 <?php echo '<span class="p-3 fw-bold fs-4">'.$storeDetails['name'].'</span>'?>
             </div>
 
-            <div class="d-flex">
-                <span class="fw-bold fs-4" style="width: 163px;">Mô tả: </span>
+            <div class="">
+                <span class="fw-bold fs-4" style="width: 163px;">Mô tả:</span>
                 <?php echo '<span class="fs-4">'.$storeDetails['description'].'</span>'?>
             </div>
 

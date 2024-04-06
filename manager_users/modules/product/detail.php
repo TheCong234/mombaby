@@ -55,12 +55,12 @@ $store = oneRaw("SELECT * FROM stories WHERE id = ".$productDetails['storeId']);
                 <?php echo '<span class="p-3 fw-bold fs-4">'.$productDetails['inventory'].'</span>'?>
             </div>
             <div class="position-absolute" style="bottom: 10px;">
-                <a href="" class="btn btn-success">Mua</a>
+                <a href="" class="btn btn-success opacity-25">Mua ngay (updating ...)</a>
                 <?php echo '<a href="?module=cart&action=carts&product-id='.$productDetails['id'].'" class="btn btn-secondary">Thêm vào giỏ hàng</a>'?>
                 
             </div>
         </div>
-
+    </div>
         
 </div>
 

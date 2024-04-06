@@ -37,29 +37,31 @@ $data = [
 layouts('header', $data);
 ?>
 
-<div class="container d-flex flex-column justify-content-center" style="margin-top:80px">
+<div class=" d-flex justify-content-center" style="margin-top:80px;">
+<div class="w-50 shadow p-3 mb-5 bg-body-tertiary rounded px-5">
 
-
-  <h1 class="text-success" style="width: 220px;">Đăng nhập</h1>
-  <form action="" method="post">
+  <h1 class="text-success text-center">Đăng nhập</h1>
+  <form action="" method="post" class="needs-validation" novalidate>
     <div class="mb-3">
       <label for="" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Mật khẩu</label>
-      <input type="password" class="form-control" id="password" name="password" placeholder="Mật khẩu">
+      <input type="password" class="form-control" id="password" name="password" placeholder="Mật khẩu" required>
     </div>
-    <div class="mb-3">
+    <div class="mb-3 text-center">
       <?php 
       if(!empty($smg))
         echo $smg.'<br>';
       ?>
-      <button type="submit" class="btn btn-success mb-3">Submit</button> <br>
+      <button type="submit" class="btn btn-success mb-3">Đăng nhập</button><br>
       <a href="?module=auth&action=forgot">Quên mật khẩu</a>
     </div>
   </form>
 </div>
+</div>
+
 <?php
 layouts('footer', $data);
 ?>

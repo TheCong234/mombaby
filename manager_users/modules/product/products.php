@@ -15,12 +15,12 @@ $products = getRaw("SELECT * FROM products")
     
     <h1 class="text-center bg-success-subtle py-3">Danh sách sản phẩm</h1>
 
-    <div class="d-flex bg-body-secondary py-3">
+    <div class="d-flex bg-body-secondary py-3 flex-wrap ">
         <?php
         if(!empty($products)){
             foreach($products as $product){
                 $amount_display = number_format($product['price'], 0, ',', '.') . ' VNĐ';
-                echo '<div class="card mx-2" style="width: 18rem;">';
+                echo '<div class="card mx-2 my-2" style="width: 18rem;">';
                     echo '<img src="'.$product['image'].'" class="card-img-top" alt="..." height="165px;">';
                     echo '<div class="card-body">';
                         echo '<h5 class="card-title d-inline-block text-truncate" style="max-width: 250px;">'.$product['name'].'</h5>';

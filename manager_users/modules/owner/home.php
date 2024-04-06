@@ -51,34 +51,34 @@ $products = getRaw("SELECT * FROM products WHERE storeId = ".$storeId);
         <div class="col-md-6">
             <div class="">
                 <span class="fw-bold fs-4">Mã cửa hàng: </span>
-                <?php echo '<span class="p-3 fw-bold fs-4">'.$storeDetails['id'].'</span>'?>
+                <?php echo '<span class="p-3 fs-4">'.$storeDetails['id'].'</span>'?>
             </div>
 
             <div class="">
                 <span class="fw-bold fs-4">Tên cửa hàng: </span>
-                <?php echo '<span class="p-3 fw-bold fs-4">'.$storeDetails['name'].'</span>'?>
+                <?php echo '<span class="p-3  fs-4">'.$storeDetails['name'].'</span>'?>
             </div>
 
-            <div class="d-flex">
+            <div class="">
                 <span class="fw-bold fs-4" style="width: 163px;">Mô tả: </span>
                 <?php echo '<span class="fs-4">'.$storeDetails['description'].'</span>'?>
             </div>
 
             <div class="">
                 <span class="fw-bold fs-4">Ngày tạo: </span>
-                <?php echo '<span class="p-3 fw-bold fs-4">'.$storeDetails['createDate'].'</span>'?>
+                <?php echo '<span class="p-3 fs-4">'.$storeDetails['createDate'].'</span>'?>
             </div>
 
             <div class="">
                 <span class="fw-bold fs-4">Địa chỉ: </span>
-                <?php echo '<span class="p-3 fw-bold fs-4">'.$storeDetails['address'].'</span>'?>
+                <?php echo '<span class="p-3 fs-4">'.$storeDetails['address'].'</span>'?>
             </div>
             <div class="">
                 <span class="fw-bold fs-4">Chủ cửa hàng: </span>
-                <?php echo '<span class="p-3 fw-bold fs-4">'.$owner['name'].'</span>'?>
+                <?php echo '<span class="p-3 fs-4">'.$owner['name'].'</span>'?>
             </div>
             <div class="">
-                <button class="btn btn-warning">Chỉnh sửa</button>
+                <button class="btn btn-warning opacity-25">Chỉnh sửa (updating ...)</button>
             </div>
         </div>
 
@@ -87,12 +87,12 @@ $products = getRaw("SELECT * FROM products WHERE storeId = ".$storeId);
     <!-- danh sách sản phẩm của cửa hàng-->
     <div class="my-3">
         <h1>Sản phẩm của shop</h1>
-        <div class="d-flex">
+        <div class="d-flex flex-wrap">
         <?php
         if(!empty($products)){
             foreach($products as $product){
                 $amount_display = number_format($product['price'], 0, ',', '.') . ' VNĐ';
-                echo '<div class="card mx-2" style="width: 18rem;">';
+                echo '<div class="card m-2" style="width: 18rem;">';
                     echo '<img src="'.$product['image'].'" class="card-img-top" alt="..." height="165px;">';
                     echo '<div class="card-body">';
                         echo '<h5 class="card-title d-inline-block text-truncate" style="max-width: 250px;">'.$product['name'].'</h5>';

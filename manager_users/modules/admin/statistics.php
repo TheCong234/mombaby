@@ -25,7 +25,7 @@ foreach($billsIncomplete as $bill){
     <h1 class="text-center bg-success-subtle py-3">Đơn hàng đã hoàn thành</h1>
     <!-- header -->
     <div class="row border overflow-hidden mx-auto shadow bg-body-tertiary rounded py-3 mt-1 w-100" style="border-radius: 8px;">
-        
+    <div class="col-md fw-bold text-center">Mã người đặt</div>
         <div class="col-md fw-bold text-center">Ngày đặt hàng</div>
         <div class="col-md fw-bold text-center">Địa chỉ nhận</div>
         <div class="col-md fw-bold text-center">Tổng tiền</div>
@@ -40,6 +40,10 @@ foreach($billsIncomplete as $bill){
         echo '<div class="row border overflow-hidden mx-auto shadow bg-body-tertiary rounded py-3 mt-1 w-100" style="border-radius: 8px;">';
         echo '    <div class="card-body">';
         echo '        <div class="row">';
+
+        echo '            <div class="col-md text-center">';
+                            echo $bill['userId'];
+        echo '            </div>';
 
         echo '            <div class="col-md text-center">';
                             echo $bill['createAt'];
@@ -80,6 +84,7 @@ foreach($billsIncomplete as $bill){
     <!-- header -->
     <div class="row border overflow-hidden mx-auto shadow bg-body-tertiary rounded py-3 mt-1 w-100" style="border-radius: 8px;">
         
+         <div class="col-md fw-bold text-center">Mã người đặt</div>
         <div class="col-md fw-bold text-center">Ngày đặt hàng</div>
         <div class="col-md fw-bold text-center">Địa chỉ nhận</div>
         <div class="col-md fw-bold text-center">Tổng tiền</div>
@@ -94,6 +99,10 @@ foreach($billsIncomplete as $bill){
         echo '<div class="row border overflow-hidden mx-auto shadow bg-body-tertiary rounded py-3 mt-1 w-100" style="border-radius: 8px;">';
         echo '    <div class="card-body">';
         echo '        <div class="row">';
+
+        echo '            <div class="col-md text-center">';
+                            echo $bill['userId'];
+        echo '            </div>';
 
         echo '            <div class="col-md text-center">';
                             echo $bill['createAt'];
